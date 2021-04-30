@@ -1,0 +1,13 @@
+body {
+  background: #212022;
+}
+
+.table {
+  color: white;
+}
+.table #top {
+  background-color: brown;
+}
+.table #body {
+  background-color: darkslategray;
+}

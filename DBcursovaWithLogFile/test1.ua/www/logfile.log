@@ -1,0 +1,49 @@
+\usr\local\mysql-5.5\bin\mysqld.exe, Version: 5.5.25 (MySQL Community Server (GPL)). started with:
+TCP Port: 3306, Named Pipe: /tmp/mysql.sock
+Time                 Id Command    Argument210316 18:30:09	  323 Connect	Pow3r@localhost on kursovabd	
+210317 12:31:07	   57 Connect	Pow3r@localhost on kursovabd
+		   57 Query	set names cp1251
+		   57 Query	SELECT *FROM `sql_arithmetic_operators`LIMIT 0 , 30
+		   57 Quit	
+210317 12:43:53	   58 Connect	Pow3r@localhost on kursovabd
+		   58 Query	set names cp1251
+		   58 Query	SELECT *FROM `sql_arithmetic_operators`LIMIT 0 , 30
+		   58 Quit	
+210317 12:43:58	   59 Connect	Pow3r@localhost on kursovabd
+		   59 Query	set names cp1251
+		   59 Query	INSERT INTO `kursovabd`.`sql_arithmetic_operators` (`id`, `operator`, `description`, `example`) VALUES (NULL, '5', '5', '5')
+		   59 Quit	
+		   60 Connect	Pow3r@localhost on kursovabd
+		   60 Query	set names cp1251
+		   60 Query	SELECT *FROM `sql_arithmetic_operators`LIMIT 0 , 30
+		   60 Quit	
+210317 12:46:33	   61 Connect	root@localhost on 
+		   61 Query	SET CHARACTER SET 'utf8'
+		   61 Query	SET collation_connection = 'utf8_general_ci'
+		   62 Connect	root@localhost on 
+		   62 Query	SET CHARACTER SET 'utf8'
+		   62 Query	SET collation_connection = 'utf8_general_ci'
+		   62 Init DB	kursovabd
+		   61 Query	SELECT `comment`
+               FROM `phpmyadmin`.`pma_column_info`
+              WHERE db_name     = 'kursovabd'
+                AND table_name  = ''
+                AND column_name = '(db_comment)'
+		   62 Query	SHOW TABLES FROM `kursovabd`
+		   62 Query	SHOW TABLE STATUS FROM `kursovabd`
+		   62 Query	SELECT CURRENT_USER()
+		   62 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''localhost''' AND PRIVILEGE_TYPE='EVENT'
+		   62 Query	SELECT CURRENT_USER()
+		   62 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''localhost''' AND PRIVILEGE_TYPE='TRIGGER'
+		   61 Query	SELECT label, id FROM `phpmyadmin`.`pma_bookmark` WHERE dbase = 'kursovabd' AND user = 'root' ORDER BY label
+		   61 Query	SELECT label, id FROM `phpmyadmin`.`pma_bookmark` WHERE dbase = 'kursovabd' AND user = '' ORDER BY label
+		   62 Quit	
+		   61 Quit	
+210317 12:46:36	   63 Connect	root@localhost on 
+		   63 Query	SET CHARACTER SET 'utf8'
+		   63 Query	SET collation_connection = 'utf8_general_ci'
+		   64 Connect	root@localhost on 
+		   64 Query	SET CHARACTER SET 'utf8'
+		   64 Query	SET collation_connection = 'utf8_general_ci'
+		   64 Quit	
+		   63 Quit	

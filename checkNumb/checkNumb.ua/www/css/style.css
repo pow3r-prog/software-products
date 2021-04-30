@@ -1,0 +1,18 @@
+body {
+  background: #061929;
+  font-size: 30px;
+}
+
+#file {
+  color: white;
+}
+
+#btn {
+  height: 50px;
+  width: 100px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#out {
+  color: white;
+}
